@@ -1,0 +1,78 @@
+/**
+ * @file
+ * This composition does...
+ *
+ * @copyright Copyright © 2018 [quote](https://vuo.org/user/831009)
+ * @see This is a Vuo Composition source code file.  See http://vuo.org for further information.
+ */
+
+digraph G
+{
+BottomLeft2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Bottom Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="705,630" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":-0.20000000298023224}"];
+BottomRight2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Bottom Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="705,810" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":-0.20000000298023224}"];
+DragBottomLeftPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Bottom Left Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="345,630" fillcolor="tangerine" _layerName="\"bottom_left\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+DragBottomRightPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Bottom Right Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="345,810" fillcolor="tangerine" _layerName="\"bottom_right\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+DragTopLeftPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Top Left Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="345,270" fillcolor="tangerine" _layerName="\"top_left\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+DragTopRightPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Top Right Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="345,450" fillcolor="tangerine" _layerName="\"top_right\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+FireOnStart [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="60,-15" _started_eventThrottling="enqueue"];
+FireOnStartValue [type="vuo.data.share.VuoBoolean" version="1.0.0" label="Fire on Start Value|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,60"];
+MakeQuadLayer2 [type="vuo.layer.make.quad" version="1.0.0" label="Make Quad Layer|<refresh>refresh\l|<image>image\l|<projection>projection\l|<gamma>gamma\l|<topLeft>topLeft\l|<topRight>topRight\l|<bottomLeft>bottomLeft\l|<bottomRight>bottomRight\l|<leftEdge>leftEdge\l|<rightEdge>rightEdge\l|<topEdge>topEdge\l|<bottomEdge>bottomEdge\l|<quad>quad\r" pos="945,90" fillcolor="blue" _projection="\"perspective\"" _gamma="1" _leftEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _rightEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _topEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _bottomEdge="{\"cutoff\":0,\"gamma\":0.0010000000474974513,\"crop\":0}"];
+ShareValue2 [type="vuo.data.share.VuoReal" version="1.0.0" label="UI Size|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,135"];
+ShareValue4 [type="vuo.data.share.VuoRenderedLayers" version="1.0.0" label="Rendered Layer|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,270"];
+TopLeft2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="705,270" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":0.20000000298023224}"];
+TopRight2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="705,450" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":0.20000000298023224}"];
+UIBottomLeft2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Bottom Left|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="945,675" _name="\"bottom_left\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1.0"];
+UIBottomRight2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Bottom Right|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="945,855" _name="\"bottom_right\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1.0"];
+UIColor [type="vuo.data.share.VuoColor" version="1.0.0" label="UI Color|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="60,195"];
+UITopLeft2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Top Left|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="945,315" _name="\"top_left\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1"];
+UITopRight2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Top Right|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="945,495" _name="\"top_right\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1.0"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<UISize>UISize\r|<UIColor>UIColor\r|<RenderedLayer>RenderedLayer\r" _UISize_type="VuoReal" _UIColor_type="VuoColor" _RenderedLayer_type="VuoRenderedLayers"];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Quad>Quad\l|<UITopLeft>UITopLeft\l|<UITopRight>UITopRight\l|<UIBottomLeft>UIBottomLeft\l|<UIBottomRight>UIBottomRight\l" _Quad_type="VuoLayer" _UITopLeft_type="VuoLayer" _UITopRight_type="VuoLayer" _UIBottomLeft_type="VuoLayer" _UIBottomRight_type="VuoLayer"];
+
+BottomLeft2:heldValue -> MakeQuadLayer2:bottomLeft;
+BottomLeft2:heldValue -> UIBottomLeft2:center [style=invis];
+BottomRight2:heldValue -> MakeQuadLayer2:bottomRight;
+BottomRight2:heldValue -> UIBottomRight2:center [style=invis];
+DragBottomLeftPoint2:draggedCenterTo -> BottomLeft2:newValue;
+DragBottomLeftPoint2:draggedCenterTo -> BottomLeft2:refresh;
+DragBottomRightPoint2:draggedCenterTo -> BottomRight2:newValue;
+DragBottomRightPoint2:draggedCenterTo -> BottomRight2:refresh;
+DragTopLeftPoint2:draggedCenterTo -> TopLeft2:newValue;
+DragTopLeftPoint2:draggedCenterTo -> TopLeft2:refresh;
+DragTopRightPoint2:draggedCenterTo -> TopRight2:newValue;
+DragTopRightPoint2:draggedCenterTo -> TopRight2:refresh;
+FireOnStart:started -> FireOnStartValue:value;
+FireOnStartValue:sameValue -> BottomLeft2:refresh;
+FireOnStartValue:sameValue -> BottomRight2:refresh;
+FireOnStartValue:sameValue -> MakeQuadLayer2:refresh;
+FireOnStartValue:sameValue -> TopLeft2:refresh;
+FireOnStartValue:sameValue -> TopRight2:refresh;
+MakeQuadLayer2:quad -> PublishedOutputs:Quad;
+PublishedInputs:RenderedLayer -> ShareValue4:value;
+PublishedInputs:UIColor -> UIColor:value;
+PublishedInputs:UISize -> ShareValue2:value;
+ShareValue2:sameValue -> UIBottomLeft2:height;
+ShareValue2:sameValue -> UIBottomLeft2:width;
+ShareValue2:sameValue -> UIBottomRight2:height;
+ShareValue2:sameValue -> UIBottomRight2:width;
+ShareValue2:sameValue -> UITopLeft2:height;
+ShareValue2:sameValue -> UITopLeft2:width;
+ShareValue2:sameValue -> UITopRight2:height;
+ShareValue2:sameValue -> UITopRight2:width;
+ShareValue4:sameValue -> DragBottomLeftPoint2:renderedLayers;
+ShareValue4:sameValue -> DragBottomRightPoint2:renderedLayers;
+ShareValue4:sameValue -> DragTopLeftPoint2:renderedLayers;
+ShareValue4:sameValue -> DragTopRightPoint2:renderedLayers;
+TopLeft2:heldValue -> MakeQuadLayer2:topLeft;
+TopLeft2:heldValue -> UITopLeft2:center [style=invis];
+TopRight2:heldValue -> MakeQuadLayer2:topRight;
+TopRight2:heldValue -> UITopRight2:center [style=invis];
+UIBottomLeft2:layer -> PublishedOutputs:UIBottomLeft;
+UIBottomRight2:layer -> PublishedOutputs:UIBottomRight;
+UIColor:sameValue -> UIBottomLeft2:color;
+UIColor:sameValue -> UIBottomRight2:color;
+UIColor:sameValue -> UITopLeft2:color;
+UIColor:sameValue -> UITopRight2:color;
+UITopLeft2:layer -> PublishedOutputs:UITopLeft;
+UITopRight2:layer -> PublishedOutputs:UITopRight;
+}
