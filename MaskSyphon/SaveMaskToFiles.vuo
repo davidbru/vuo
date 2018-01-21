@@ -1,0 +1,122 @@
+/**
+ * @file
+ * This composition does...
+ *
+ * @copyright Copyright © 2016 [iason](https://vuo.org/user/292)
+ * @see This is a Vuo Composition source code file.  See http://vuo.org for further information.
+ */
+
+digraph G
+{
+AppendTexts [type="vuo.text.append" version="1.1.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<compositeText>compositeText\r" pos="-270,1125"];
+AppendTexts2 [type="vuo.text.append" version="1.1.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<compositeText>compositeText\r" pos="-270,990" _separator="\"\""];
+ApplyMask [type="vuo.image.apply.mask" version="1.1.2" label="Apply Mask|<refresh>refresh\l|<image>image\l|<mask>mask\l|<maskedImage>maskedImage\r" pos="150,-210"];
+BottomLeft2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Bottom Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="-690,150" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":-0.20000000298023224}"];
+BottomRight2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Bottom Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="-690,270" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":-0.20000000298023224}"];
+ConvertTextToData [type="vuo.type.text.data" version="1.0.0" label="Convert Text to Data|<refresh>refresh\l|<text>text\l|<data>data\r" pos="-360,165"];
+Count [type="vuo.math.count.VuoReal" version="1.0.0" label="Count|<refresh>refresh\l|<increment>increment\l|<decrement>decrement\l|<setCount>setCount\l|<count>count\r" pos="-735,1020" _increment="1.0" _decrement="1.0" _setCount="0"];
+DragBottomLeftPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Bottom Left Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="-1050,150" fillcolor="tangerine" _layerName="\"bottom_left\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+DragBottomRightPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Bottom Right Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="-1050,270" fillcolor="tangerine" _layerName="\"bottom_right\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+DragTopLeftPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Top Left Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="-1050,-90" fillcolor="tangerine" _layerName="\"top_left\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+DragTopRightPoint2 [type="vuo.layer.drag" version="1.0.1" label="Drag Top Right Point|<refresh>refresh\l|<renderedLayers>renderedLayers\l|<layerName>layerName\l|<button>button\l|<modifierKey>modifierKey\l|<startedDrag>startedDrag\r|<draggedCenterTo>draggedCenterTo\r|<endedDrag>endedDrag\r" pos="-1050,30" fillcolor="tangerine" _layerName="\"top_right\"" _button="\"left\"" _modifierKey="\"any\"" _startedDrag_eventThrottling="enqueue" _draggedCenterTo_eventThrottling="drop" _endedDrag_eventThrottling="enqueue"];
+FireOnStart2 [type="vuo.event.fireOnStart" version="1.0.0" label="Fire on Start|<refresh>refresh\l|<started>started\r" pos="-1395,-285" _started_eventThrottling="enqueue"];
+HoldValue2 [type="vuo.data.hold.VuoReal" version="2.0.0" label="Hold Value|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="-585,1005" _initialValue="1"];
+MakeImageLayer [type="vuo.layer.make" version="2.1.0" label="Make Image Layer|<refresh>refresh\l|<name>name\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<opacity>opacity\l|<layer>layer\r" pos="315,-225" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _center="{\"x\":0.0,\"y\":0.0}" _rotation="0.0" _width="2.0" _opacity="1.0"];
+MakeList12 [type="vuo.list.make.5.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<list>list\r" pos="489,-214" fillcolor="blue"];
+MakeList18 [type="vuo.list.make.1.VuoWindowProperty" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="539,-184" fillcolor="blue"];
+MakeList35 [type="vuo.list.make.2.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="-160,-124"];
+MakeList6 [type="vuo.list.make.7.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<7>7\l|<list>list\r" pos="-319,1136" _2="\";\"" _4="\";\"" _6="\";\""];
+MakeList8 [type="vuo.list.make.3.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<list>list\r" pos="-319,1001" _1="\"~\\/Desktop\\/\"" _3="\".txt\""];
+MakeQuadLayer2 [type="vuo.layer.make.quad" version="1.0.0" label="Make Quad Layer|<refresh>refresh\l|<image>image\l|<projection>projection\l|<gamma>gamma\l|<topLeft>topLeft\l|<topRight>topRight\l|<bottomLeft>bottomLeft\l|<bottomRight>bottomRight\l|<leftEdge>leftEdge\l|<rightEdge>rightEdge\l|<topEdge>topEdge\l|<bottomEdge>bottomEdge\l|<quad>quad\r" pos="-450,-135" fillcolor="blue" _projection="\"perspective\"" _gamma="1" _leftEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _rightEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _topEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _bottomEdge="{\"cutoff\":0,\"gamma\":0.0010000000474974513,\"crop\":0}"];
+ReceiveImageViaSyphon2 [type="vuo.syphon.receive" version="1.0.2" label="Receive Image via Syphon|<refresh>refresh\l|<serverDescription>serverDescription\l|<receivedImage>receivedImage\r" pos="-105,-210" _receivedImage_eventThrottling="drop"];
+ReceiveKeyboardButtons2 [type="vuo.keyboard.button" version="1.0.1" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-1005,1020" _key="\"UpArrow\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+ReceiveKeyboardButtons3 [type="vuo.keyboard.button" version="1.0.1" label="Receive Keyboard Buttons|<refresh>refresh\l|<window>window\l|<key>key\l|<modifierKey>modifierKey\l|<repeatWhenHeld>repeatWhenHeld\l|<pressed>pressed\r|<released>released\r" pos="-1005,1140" _key="\"DownArrow\"" _modifierKey="\"any\"" _repeatWhenHeld="false" _pressed_eventThrottling="enqueue" _released_eventThrottling="enqueue"];
+RenderLayersToImage [type="vuo.layer.render.image" version="1.2.0" label="Render Layers to Image|<refresh>refresh\l|<layers>layers\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<multisampling>multisampling\l|<image>image\r|<renderedLayers>renderedLayers\r" pos="-90,-135" _width="1024" _height="768" _colorDepth="\"8bpc\"" _multisampling="\"off\""];
+RenderLayersToWindow2 [type="vuo.layer.render.window" version="2.4.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowProperties>setWindowProperties\l|<showedWindow>showedWindow\r|<requestedFrame>requestedFrame\r|<renderedLayers>renderedLayers\r" pos="585,-225" fillcolor="blue" _multisampling="\"4\"" _showedWindow_eventThrottling="enqueue" _requestedFrame_eventThrottling="drop"];
+SaveData [type="vuo.data.save" version="1.0.0" label="Save Data|<refresh>refresh\l|<url>url\l|<saveData>saveData\l|<overwriteUrl>overwriteUrl\l|<done>done\r" pos="-15,1110" _overwriteUrl="true"];
+ShareValue2 [type="vuo.data.share.VuoReal" version="1.0.0" label="UI Size|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-1395,-180" _value="0.059999999999999998"];
+SummarizeValue [type="vuo.data.summarize.VuoPoint2d" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="-630,45"];
+SummarizeValue2 [type="vuo.data.summarize.VuoPoint2d" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="-255,1125"];
+SummarizeValue6 [type="vuo.data.summarize.VuoPoint2d" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="-675,270"];
+SummarizeValue7 [type="vuo.data.summarize.VuoPoint2d" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="-675,240"];
+SummarizeValue8 [type="vuo.data.summarize.VuoReal" version="1.0.1" label="Summarize Value|<refresh>refresh\l|<value>value\l|<summary>summary\r" pos="-1020,1140"];
+TopLeft2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="-690,-90" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":0.20000000298023224}"];
+TopRight2 [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="-690,30" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":0.20000000298023224}"];
+UIBottomLeft2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Bottom Left|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="-450,450" _name="\"bottom_left\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1.0"];
+UIBottomRight2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Bottom Right|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="-450,630" _name="\"bottom_right\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1.0"];
+UIColor [type="vuo.data.share.VuoColor" version="1.0.0" label="UI Color|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-1395,-105" _value="{\"r\":0.9859464168548584,\"g\":0,\"b\":0.02694743312895298,\"a\":0.50000762939453125}"];
+UITopLeft2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Top Left|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="-450,90" _name="\"top_left\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1"];
+UITopRight2 [type="vuo.layer.make.oval" version="1.1.0" label="UI Top Right|<refresh>refresh\l|<name>name\l|<color>color\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<height>height\l|<sharpness>sharpness\l|<layer>layer\r" pos="-450,270" _name="\"top_right\"" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _rotation="0.0" _sharpness="1.0"];
+
+AppendTexts2:compositeText -> SaveData:url;
+AppendTexts:compositeText -> ConvertTextToData:text;
+ApplyMask:maskedImage -> MakeImageLayer:image;
+BottomLeft2:heldValue -> MakeQuadLayer2:bottomLeft;
+BottomLeft2:heldValue -> UIBottomLeft2:center [style=invis];
+BottomRight2:heldValue -> MakeQuadLayer2:bottomRight;
+BottomRight2:heldValue -> UIBottomRight2:center [style=invis];
+ConvertTextToData:data -> SaveData:saveData;
+Count:count -> HoldValue2:newValue;
+Count:count -> HoldValue2:refresh;
+DragBottomLeftPoint2:draggedCenterTo -> BottomLeft2:newValue;
+DragBottomLeftPoint2:draggedCenterTo -> BottomLeft2:refresh;
+DragBottomLeftPoint2:draggedCenterTo -> SummarizeValue7:value;
+DragBottomRightPoint2:draggedCenterTo -> BottomRight2:newValue;
+DragBottomRightPoint2:draggedCenterTo -> BottomRight2:refresh;
+DragBottomRightPoint2:draggedCenterTo -> SummarizeValue6:value;
+DragTopLeftPoint2:draggedCenterTo -> SummarizeValue:value;
+DragTopLeftPoint2:draggedCenterTo -> TopLeft2:newValue;
+DragTopLeftPoint2:draggedCenterTo -> TopLeft2:refresh;
+DragTopRightPoint2:draggedCenterTo -> SummarizeValue2:value;
+DragTopRightPoint2:draggedCenterTo -> TopRight2:newValue;
+DragTopRightPoint2:draggedCenterTo -> TopRight2:refresh;
+FireOnStart2:started -> BottomLeft2:refresh [style=invis];
+FireOnStart2:started -> BottomRight2:refresh [style=invis];
+FireOnStart2:started -> HoldValue2:refresh [style=invis];
+FireOnStart2:started -> MakeQuadLayer2:refresh [style=invis];
+FireOnStart2:started -> ShareValue2:refresh [style=invis];
+FireOnStart2:started -> TopLeft2:refresh [style=invis];
+FireOnStart2:started -> TopRight2:refresh [style=invis];
+FireOnStart2:started -> UIColor:refresh [style=invis];
+HoldValue2:heldValue -> SummarizeValue8:value;
+MakeImageLayer:layer -> MakeList12:1;
+MakeList12:list -> RenderLayersToWindow2:layers;
+MakeList18:list -> RenderLayersToWindow2:setWindowProperties;
+MakeList35:list -> RenderLayersToImage:layers;
+MakeList6:list -> AppendTexts:texts;
+MakeList8:list -> AppendTexts2:texts;
+MakeQuadLayer2:quad -> MakeList35:1;
+ReceiveImageViaSyphon2:receivedImage -> ApplyMask:image;
+ReceiveKeyboardButtons2:pressed -> Count:increment;
+ReceiveKeyboardButtons3:pressed -> Count:decrement;
+RenderLayersToImage:image -> ApplyMask:mask;
+RenderLayersToWindow2:renderedLayers -> DragBottomLeftPoint2:renderedLayers [style=invis];
+RenderLayersToWindow2:renderedLayers -> DragBottomRightPoint2:renderedLayers [style=invis];
+RenderLayersToWindow2:renderedLayers -> DragTopLeftPoint2:renderedLayers [style=invis];
+RenderLayersToWindow2:renderedLayers -> DragTopRightPoint2:renderedLayers [style=invis];
+ShareValue2:sameValue -> UIBottomLeft2:height [style=invis];
+ShareValue2:sameValue -> UIBottomLeft2:width [style=invis];
+ShareValue2:sameValue -> UIBottomRight2:height [style=invis];
+ShareValue2:sameValue -> UIBottomRight2:width [style=invis];
+ShareValue2:sameValue -> UITopLeft2:height [style=invis];
+ShareValue2:sameValue -> UITopLeft2:width [style=invis];
+ShareValue2:sameValue -> UITopRight2:height [style=invis];
+ShareValue2:sameValue -> UITopRight2:width [style=invis];
+SummarizeValue2:summary -> MakeList6:3;
+SummarizeValue6:summary -> MakeList6:7;
+SummarizeValue7:summary -> MakeList6:5;
+SummarizeValue8:summary -> MakeList8:2;
+SummarizeValue:summary -> MakeList6:1;
+TopLeft2:heldValue -> MakeQuadLayer2:topLeft;
+TopLeft2:heldValue -> UITopLeft2:center [style=invis];
+TopRight2:heldValue -> MakeQuadLayer2:topRight;
+TopRight2:heldValue -> UITopRight2:center [style=invis];
+UIBottomLeft2:layer -> MakeList12:4;
+UIBottomRight2:layer -> MakeList12:5;
+UIColor:sameValue -> UIBottomLeft2:color [style=invis];
+UIColor:sameValue -> UIBottomRight2:color [style=invis];
+UIColor:sameValue -> UITopLeft2:color [style=invis];
+UIColor:sameValue -> UITopRight2:color [style=invis];
+UITopLeft2:layer -> MakeList12:2;
+UITopRight2:layer -> MakeList12:3;
+}
