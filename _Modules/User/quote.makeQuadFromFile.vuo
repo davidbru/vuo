@@ -1,6 +1,6 @@
 /**
  * @file
- * This composition does...
+ * Component: Create a white quad from a coordinate file
  *
  * @copyright Copyright © 2018 [quote](https://vuo.org/user/831009)
  * @see This is a Vuo Composition source code file.  See http://vuo.org for further information.
@@ -47,7 +47,7 @@ SplitText4 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<ref
 SplitText5 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<refresh>refresh\l|<text>text\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<splitTexts>splitTexts\r" pos="900,660" _separator="\",\"" _includeEmptyParts="false"];
 TopLeft [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="1560,285" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":0.20000000298023224}"];
 TopRight [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="1560,465" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":0.20000000298023224}"];
-PublishedInputs [type="vuo.in" label="PublishedInputs|<Refresh>Refresh\r|<Folder>Folder\r|<FileNumber>FileNumber\r" _Refresh_type="event" _Folder_type="VuoText" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber_type="VuoText" _FileNumber="\"1\""];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Refresh>Refresh\r|<Folder>Folder\r|<FileNumber>FileNumber\r" _Refresh_type="event" _Folder_type="VuoText" _Folder="\".\\/coordinates\\/\"" _FileNumber_type="VuoText" _FileNumber="\"1\""];
 PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Quad>Quad\l" _Quad_type="VuoLayer"];
 
 AppendTexts:compositeText -> FetchData:url;
