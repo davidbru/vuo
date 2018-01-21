@@ -1,0 +1,106 @@
+/**
+ * @file
+ * This composition does...
+ *
+ * @copyright Copyright © 2018 [quote](https://vuo.org/user/831009)
+ * @see This is a Vuo Composition source code file.  See http://vuo.org for further information.
+ */
+
+digraph G
+{
+AppendTexts [type="vuo.text.append" version="1.1.0" label="Append Texts|<refresh>refresh\l|<texts>texts\l|<separator>separator\l|<compositeText>compositeText\r" pos="120,300"];
+BottomLeft [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Bottom Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="1560,645" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":-0.20000000298023224}"];
+BottomRight [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Bottom Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="1560,825" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":0.20000000298023224}"];
+ConvertDataToText [type="vuo.type.data.text" version="1.0.0" label="Convert Data to Text|<refresh>refresh\l|<data>data\l|<text>text\r" pos="1050,570"];
+ConvertTextToReal1 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,930"];
+ConvertTextToReal2 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,1125"];
+ConvertTextToReal3 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,945"];
+ConvertTextToReal4 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,750"];
+ConvertTextToReal5 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,1110"];
+ConvertTextToReal6 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,765"];
+ConvertTextToReal7 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,570"];
+ConvertTextToReal8 [type="vuo.type.text.real" version="1.0.1" label="Convert Text to Real|<refresh>refresh\l|<text>text\l|<real>real\r" pos="1410,585"];
+FetchData [type="vuo.data.fetch" version="1.0.0" label="Fetch Data|<refresh>refresh\l|<url>url\l|<data>data\r" pos="255,300"];
+GetItemFromList1 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,555" _which="2"];
+GetItemFromList2 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,300" _which="1"];
+GetItemFromList3 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,375" _which="2"];
+GetItemFromList4 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,480" _which="1"];
+GetItemFromList5 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="705,480" _which="2"];
+GetItemFromList6 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="705,660" _which="3"];
+GetItemFromList7 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,735" _which="2"];
+GetItemFromList8 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,660" _which="1"];
+GetItemFromList9 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="705,840" _which="4"];
+GetItemFromList10 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,915" _which="2"];
+GetItemFromList11 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="1065,840" _which="1"];
+GetItemFromList12 [type="vuo.list.get.VuoText" version="1.0.1" label="Get Item from List|<refresh>refresh\l|<list>list\l|<which>which\l|<item>item\r" pos="705,300" _which="1"];
+Make2DPoint1 [type="vuo.point.make.VuoPoint2d" version="2.0.0" label="Make 2D Point|<refresh>refresh\l|<x>x\l|<y>y\l|<point>point\r" pos="1305,480"];
+Make2DPoint2 [type="vuo.point.make.VuoPoint2d" version="2.0.0" label="Make 2D Point|<refresh>refresh\l|<x>x\l|<y>y\l|<point>point\r" pos="1305,660"];
+Make2DPoint3 [type="vuo.point.make.VuoPoint2d" version="2.0.0" label="Make 2D Point|<refresh>refresh\l|<x>x\l|<y>y\l|<point>point\r" pos="1305,840"];
+Make2DPoint4 [type="vuo.point.make.VuoPoint2d" version="2.0.0" label="Make 2D Point|<refresh>refresh\l|<x>x\l|<y>y\l|<point>point\r" pos="1305,300"];
+MakeList [type="vuo.list.make.3.VuoText" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<list>list\r" pos="71,311" _3="\".txt\""];
+MakeQuadLayer [type="vuo.layer.make.quad" version="1.0.0" label="Make Quad Layer|<refresh>refresh\l|<image>image\l|<projection>projection\l|<gamma>gamma\l|<topLeft>topLeft\l|<topRight>topRight\l|<bottomLeft>bottomLeft\l|<bottomRight>bottomRight\l|<leftEdge>leftEdge\l|<rightEdge>rightEdge\l|<topEdge>topEdge\l|<bottomEdge>bottomEdge\l|<quad>quad\r" pos="1725,240" fillcolor="blue" _projection="\"perspective\"" _gamma="1" _leftEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _rightEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _topEdge="{\"cutoff\":0,\"gamma\":1,\"crop\":0}" _bottomEdge="{\"cutoff\":0,\"gamma\":0.0010000000474974513,\"crop\":0}"];
+SpinOffEvent [type="vuo.event.spinOffEvent" version="1.0.0" label="Spin Off Event|<refresh>refresh\l|<spunOff>spunOff\r" pos="120,150" _spunOff_eventThrottling="enqueue"];
+SplitText1 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<refresh>refresh\l|<text>text\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<splitTexts>splitTexts\r" pos="900,480" _separator="\",\"" _includeEmptyParts="false"];
+SplitText2 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<refresh>refresh\l|<text>text\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<splitTexts>splitTexts\r" pos="465,300" _separator="\";\"" _includeEmptyParts="false"];
+SplitText3 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<refresh>refresh\l|<text>text\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<splitTexts>splitTexts\r" pos="900,300" _separator="\",\"" _includeEmptyParts="false"];
+SplitText4 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<refresh>refresh\l|<text>text\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<splitTexts>splitTexts\r" pos="900,840" _separator="\",\"" _includeEmptyParts="false"];
+SplitText5 [type="vuo.text.split.VuoText" version="1.0.0" label="Split Text|<refresh>refresh\l|<text>text\l|<separator>separator\l|<includeEmptyParts>includeEmptyParts\l|<splitTexts>splitTexts\r" pos="900,660" _separator="\",\"" _includeEmptyParts="false"];
+TopLeft [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Left|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="1560,285" fillcolor="cyan" _initialValue="{\"x\":-0.20000000298023224,\"y\":0.20000000298023224}"];
+TopRight [type="vuo.data.hold.VuoPoint2d" version="2.0.0" label="Top Right|<refresh>refresh\l|<initialValue>initialValue\l|<newValue>newValue\l|<heldValue>heldValue\r" pos="1560,465" fillcolor="cyan" _initialValue="{\"x\":0.20000000298023224,\"y\":0.20000000298023224}"];
+PublishedInputs [type="vuo.in" label="PublishedInputs|<Refresh>Refresh\r|<Folder>Folder\r|<FileNumber>FileNumber\r" _Refresh_type="event" _Folder_type="VuoText" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber_type="VuoText" _FileNumber="\"1\""];
+PublishedOutputs [type="vuo.out" label="PublishedOutputs|<Quad>Quad\l" _Quad_type="VuoLayer"];
+
+AppendTexts:compositeText -> FetchData:url;
+BottomLeft:heldValue -> MakeQuadLayer:bottomLeft;
+BottomRight:heldValue -> MakeQuadLayer:bottomRight;
+ConvertDataToText:text -> SplitText2:text;
+ConvertTextToReal1:real -> Make2DPoint2:x;
+ConvertTextToReal2:real -> Make2DPoint3:y;
+ConvertTextToReal3:real -> Make2DPoint2:y;
+ConvertTextToReal4:real -> Make2DPoint1:x;
+ConvertTextToReal5:real -> Make2DPoint3:x;
+ConvertTextToReal6:real -> Make2DPoint1:y;
+ConvertTextToReal7:real -> Make2DPoint4:x;
+ConvertTextToReal8:real -> Make2DPoint4:y;
+FetchData:data -> ConvertDataToText:data;
+GetItemFromList1:item -> ConvertTextToReal6:text;
+GetItemFromList2:item -> ConvertTextToReal7:text;
+GetItemFromList3:item -> ConvertTextToReal8:text;
+GetItemFromList4:item -> ConvertTextToReal4:text;
+GetItemFromList5:item -> SplitText1:text;
+GetItemFromList6:item -> SplitText5:text;
+GetItemFromList7:item -> ConvertTextToReal3:text;
+GetItemFromList8:item -> ConvertTextToReal1:text;
+GetItemFromList9:item -> SplitText4:text;
+GetItemFromList10:item -> ConvertTextToReal2:text;
+GetItemFromList11:item -> ConvertTextToReal5:text;
+GetItemFromList12:item -> SplitText3:text;
+Make2DPoint1:point -> TopRight:newValue;
+Make2DPoint2:point -> BottomLeft:newValue;
+Make2DPoint3:point -> BottomRight:newValue;
+Make2DPoint4:point -> TopLeft:newValue;
+MakeList:list -> AppendTexts:texts;
+MakeQuadLayer:quad -> PublishedOutputs:Quad;
+PublishedInputs:FileNumber -> MakeList:2;
+PublishedInputs:Folder -> MakeList:1;
+PublishedInputs:Refresh -> SpinOffEvent:refresh;
+SpinOffEvent:spunOff -> BottomLeft:refresh;
+SpinOffEvent:spunOff -> BottomRight:refresh;
+SpinOffEvent:spunOff -> FetchData:refresh;
+SpinOffEvent:spunOff -> TopLeft:refresh;
+SpinOffEvent:spunOff -> TopRight:refresh;
+SplitText1:splitTexts -> GetItemFromList1:list;
+SplitText1:splitTexts -> GetItemFromList4:list;
+SplitText2:splitTexts -> GetItemFromList5:list;
+SplitText2:splitTexts -> GetItemFromList6:list;
+SplitText2:splitTexts -> GetItemFromList9:list;
+SplitText2:splitTexts -> GetItemFromList12:list;
+SplitText3:splitTexts -> GetItemFromList2:list;
+SplitText3:splitTexts -> GetItemFromList3:list;
+SplitText4:splitTexts -> GetItemFromList10:list;
+SplitText4:splitTexts -> GetItemFromList11:list;
+SplitText5:splitTexts -> GetItemFromList7:list;
+SplitText5:splitTexts -> GetItemFromList8:list;
+TopLeft:heldValue -> MakeQuadLayer:topLeft;
+TopRight:heldValue -> MakeQuadLayer:topRight;
+}
