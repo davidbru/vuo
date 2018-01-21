@@ -1,6 +1,6 @@
 /**
  * @file
- * This composition does...
+ * Load coordinate files from folder "./coordinates" as mask image for the syphon video
  *
  * @copyright Copyright © 2016 [iason](https://vuo.org/user/292)
  * @see This is a Vuo Composition source code file.  See http://vuo.org for further information.
@@ -10,21 +10,21 @@ digraph G
 {
 ApplyMask [type="vuo.image.apply.mask" version="1.1.2" label="Apply Mask|<refresh>refresh\l|<image>image\l|<mask>mask\l|<maskedImage>maskedImage\r" pos="-1020,-495"];
 BecameTrue [type="vuo.event.becameTrue" version="1.0.0" label="Became True|<refresh>refresh\l|<value>value\l|<becameTrue>becameTrue\r" pos="-1935,-495"];
-Curve2 [type="vuo.motion.curve.VuoReal" version="2.0.0" label="Curve|<refresh>refresh\l|<time>time\l|<startPosition>startPosition\l|<endPosition>endPosition\l|<duration>duration\l|<curve>curve\l|<easing>easing\l|<loop>loop\l|<phase>phase\l|<value>value\r" pos="-1935,-660" _endPosition="3.000000" _duration="5" _curve="\"quadratic\"" _easing="\"in\"" _loop="\"none\"" _phase="0.0"];
+Curve [type="vuo.motion.curve.VuoReal" version="2.0.0" label="Curve|<refresh>refresh\l|<time>time\l|<startPosition>startPosition\l|<endPosition>endPosition\l|<duration>duration\l|<curve>curve\l|<easing>easing\l|<loop>loop\l|<phase>phase\l|<value>value\r" pos="-1935,-660" _endPosition="3.000000" _duration="5" _curve="\"quadratic\"" _easing="\"in\"" _loop="\"none\"" _phase="0.0"];
 IsIntegerNonzero [type="vuo.type.integer.boolean" version="1.0.1" label="Is Integer Nonzero|<refresh>refresh\l|<integer>integer\l|<boolean>boolean\r" pos="-1380,-465"];
 MakeImageLayer [type="vuo.layer.make" version="2.1.0" label="Make Image Layer|<refresh>refresh\l|<name>name\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<opacity>opacity\l|<layer>layer\r" pos="-855,-510" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _center="{\"x\":0.0,\"y\":0.0}" _rotation="0.0" _width="2.0" _opacity="1.0"];
-MakeList16 [type="vuo.list.make.17.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<7>7\l|<8>8\l|<9>9\l|<10>10\l|<11>11\l|<12>12\l|<13>13\l|<14>14\l|<15>15\l|<16>16\l|<17>17\l|<list>list\r" pos="-1321,-409"];
-MakeList18 [type="vuo.list.make.1.VuoWindowProperty" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-631,-469" fillcolor="blue"];
-MakeList9 [type="vuo.list.make.1.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-681,-499" fillcolor="blue"];
-MakeQuadFromFile1 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-450" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"1\"" _Quad_eventThrottling="enqueue"];
-MakeQuadFromFile2 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-360" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"2\"" _Quad_eventThrottling="enqueue"];
-MakeQuadFromFile3 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-270" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"3\"" _Quad_eventThrottling="enqueue"];
-MakeQuadFromFile4 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-180" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"4\"" _Quad_eventThrottling="enqueue"];
-MakeQuadFromFile5 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-90" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"5\"" _Quad_eventThrottling="enqueue"];
-MakeQuadFromFile6 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,0" _Folder="\"~\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"6\"" _Quad_eventThrottling="enqueue"];
-ReceiveImageViaSyphon2 [type="vuo.syphon.receive" version="1.0.2" label="Receive Image via Syphon|<refresh>refresh\l|<serverDescription>serverDescription\l|<receivedImage>receivedImage\r" pos="-1260,-495" _receivedImage_eventThrottling="drop"];
+MakeList1 [type="vuo.list.make.17.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<7>7\l|<8>8\l|<9>9\l|<10>10\l|<11>11\l|<12>12\l|<13>13\l|<14>14\l|<15>15\l|<16>16\l|<17>17\l|<list>list\r" pos="-1321,-409"];
+MakeList2 [type="vuo.list.make.1.VuoWindowProperty" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-631,-469" fillcolor="blue"];
+MakeList3 [type="vuo.list.make.1.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-681,-499" fillcolor="blue"];
+MakeQuadFromFile1 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-450" _Folder="\".\\/coordinates\\/\"" _FileNumber="\"1\"" _Quad_eventThrottling="enqueue"];
+MakeQuadFromFile2 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-360" _Folder="\".\\/coordinates\\/\"" _FileNumber="\"2\"" _Quad_eventThrottling="enqueue"];
+MakeQuadFromFile3 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-270" _Folder="\".\\/coordinates\\/\"" _FileNumber="\"3\"" _Quad_eventThrottling="enqueue"];
+MakeQuadFromFile4 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-180" _Folder="\".\\/coordinates\\/\"" _FileNumber="\"4\"" _Quad_eventThrottling="enqueue"];
+MakeQuadFromFile5 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,-90" _Folder="\".\\/coordinates\\/\"" _FileNumber="\"5\"" _Quad_eventThrottling="enqueue"];
+MakeQuadFromFile6 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1575,0" _Folder="\".\\/coordinates\\/\"" _FileNumber="\"6\"" _Quad_eventThrottling="enqueue"];
+ReceiveImageViaSyphon [type="vuo.syphon.receive" version="1.0.2" label="Receive Image via Syphon|<refresh>refresh\l|<serverDescription>serverDescription\l|<receivedImage>receivedImage\r" pos="-1260,-495" _receivedImage_eventThrottling="drop"];
 RenderLayersToImage [type="vuo.layer.render.image" version="1.2.0" label="Render Layers to Image|<refresh>refresh\l|<layers>layers\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<multisampling>multisampling\l|<image>image\r|<renderedLayers>renderedLayers\r" pos="-1245,-420" _width="1024" _height="768" _colorDepth="\"8bpc\"" _multisampling="\"off\""];
-RenderLayersToWindow2 [type="vuo.layer.render.window" version="2.4.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowProperties>setWindowProperties\l|<showedWindow>showedWindow\r|<requestedFrame>requestedFrame\r|<renderedLayers>renderedLayers\r" pos="-585,-510" fillcolor="blue" _multisampling="\"4\"" _showedWindow_eventThrottling="enqueue" _requestedFrame_eventThrottling="drop"];
+RenderLayersToWindow [type="vuo.layer.render.window" version="2.4.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowProperties>setWindowProperties\l|<showedWindow>showedWindow\r|<requestedFrame>requestedFrame\r|<renderedLayers>renderedLayers\r" pos="-585,-510" fillcolor="blue" _multisampling="\"4\"" _showedWindow_eventThrottling="enqueue" _requestedFrame_eventThrottling="drop"];
 RoundDown [type="vuo.math.roundDown" version="2.0.0" label="Round Down|<refresh>refresh\l|<real>real\l|<roundedDown>roundedDown\r" pos="-1800,-660"];
 
 ApplyMask:maskedImage -> MakeImageLayer:image;
@@ -34,20 +34,20 @@ BecameTrue:becameTrue -> MakeQuadFromFile3:Refresh;
 BecameTrue:becameTrue -> MakeQuadFromFile4:Refresh;
 BecameTrue:becameTrue -> MakeQuadFromFile5:Refresh;
 BecameTrue:becameTrue -> MakeQuadFromFile6:Refresh;
-Curve2:value -> RoundDown:real;
+Curve:value -> RoundDown:real;
 IsIntegerNonzero:boolean -> BecameTrue:value;
-MakeImageLayer:layer -> MakeList9:1;
-MakeList16:list -> RenderLayersToImage:layers;
-MakeList18:list -> RenderLayersToWindow2:setWindowProperties;
-MakeList9:list -> RenderLayersToWindow2:layers;
-MakeQuadFromFile1:Quad -> MakeList16:1;
-MakeQuadFromFile2:Quad -> MakeList16:2;
-MakeQuadFromFile3:Quad -> MakeList16:3;
-MakeQuadFromFile4:Quad -> MakeList16:4;
-MakeQuadFromFile5:Quad -> MakeList16:5;
-MakeQuadFromFile6:Quad -> MakeList16:6;
-ReceiveImageViaSyphon2:receivedImage -> ApplyMask:image;
+MakeImageLayer:layer -> MakeList3:1;
+MakeList1:list -> RenderLayersToImage:layers;
+MakeList2:list -> RenderLayersToWindow:setWindowProperties;
+MakeList3:list -> RenderLayersToWindow:layers;
+MakeQuadFromFile1:Quad -> MakeList1:1;
+MakeQuadFromFile2:Quad -> MakeList1:2;
+MakeQuadFromFile3:Quad -> MakeList1:3;
+MakeQuadFromFile4:Quad -> MakeList1:4;
+MakeQuadFromFile5:Quad -> MakeList1:5;
+MakeQuadFromFile6:Quad -> MakeList1:6;
+ReceiveImageViaSyphon:receivedImage -> ApplyMask:image;
 RenderLayersToImage:image -> ApplyMask:mask;
-RenderLayersToWindow2:requestedFrame -> Curve2:time [style=invis];
+RenderLayersToWindow:requestedFrame -> Curve:time [style=invis];
 RoundDown:roundedDown -> IsIntegerNonzero:integer;
 }
