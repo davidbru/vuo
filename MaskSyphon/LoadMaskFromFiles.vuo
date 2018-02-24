@@ -9,10 +9,11 @@
 digraph G
 {
 ApplyMask [type="vuo.image.apply.mask" version="1.1.2" label="Apply Mask|<refresh>refresh\l|<image>image\l|<mask>mask\l|<maskedImage>maskedImage\r" pos="-1020,-465"];
+ChangeWindowSize [type="vuo.window.size" version="1.0.0" label="Change Window Size|<refresh>refresh\l|<width>width\l|<height>height\l|<unit>unit\l|<property>property\r" pos="-795,-330" _unit="\"points\""];
 FetchImage3 [type="vuo.image.fetch" version="2.0.0" label="Fetch Image|<refresh>refresh\l|<url>url\l|<image>image\r" pos="-1050,-825" _url="\"..\\/..\\/..\\/Movies\\/_vj\\/_videos\\/abstrakt\\/2017_10_27_beatsfreitag\\/beatsfreitag_weiss_2.png\""];
 MakeImageLayer [type="vuo.layer.make" version="2.1.0" label="Make Image Layer|<refresh>refresh\l|<name>name\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<opacity>opacity\l|<layer>layer\r" pos="-795,-480" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _center="{\"x\":0.0,\"y\":0.0}" _rotation="0.0" _width="2.0" _opacity="1.0"];
 MakeImageLayer2 [type="vuo.layer.make" version="2.1.0" label="Make Image Layer|<refresh>refresh\l|<name>name\l|<image>image\l|<anchor>anchor\l|<center>center\l|<rotation>rotation\l|<width>width\l|<opacity>opacity\l|<layer>layer\r" pos="-855,-840" _anchor="{\"horizontalAlignment\":\"center\",\"verticalAlignment\":\"center\"}" _center="{\"x\":-0.02500000037252903,\"y\":0}" _rotation="0.0" _width="0.56244146158627861" _opacity="1.0"];
-MakeList10 [type="vuo.list.make.2.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="-621,-469" fillcolor="blue"];
+MakeList10 [type="vuo.list.make.2.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<list>list\r" pos="-608,-469" fillcolor="blue"];
 MakeList2 [type="vuo.list.make.1.VuoWindowProperty" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<list>list\r" pos="-571,-439" fillcolor="blue"];
 MakeList9 [type="vuo.list.make.15.VuoLayer" version="2.0.0" label="Make List|<refresh>refresh\l|<1>1\l|<2>2\l|<3>3\l|<4>4\l|<5>5\l|<6>6\l|<7>7\l|<8>8\l|<9>9\l|<10>10\l|<11>11\l|<12>12\l|<13>13\l|<14>14\l|<15>15\l|<list>list\r" pos="-1321,-439"];
 MakeQuadFromFile [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1560,-450" _Folder="\"\\/Users\\/david\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"1\"" _Quad_eventThrottling="enqueue"];
@@ -27,11 +28,14 @@ MakeQuadFromFile6 [type="quote.makeQuadFromFile" version="" label="Make Quad Fro
 MakeQuadFromFile7 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1560,270" _Folder="\"\\/Users\\/david\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"9\"" _Quad_eventThrottling="enqueue"];
 MakeQuadFromFile8 [type="quote.makeQuadFromFile" version="" label="Make Quad From File|<refresh>refresh\l|<Refresh>Refresh\l|<Folder>Folder\l|<FileNumber>FileNumber\l|<Quad>Quad\r" pos="-1560,180" _Folder="\"\\/Users\\/david\\/Documents\\/Vuo\\/MaskSyphon\\/coordinates\\/\"" _FileNumber="\"8\"" _Quad_eventThrottling="enqueue"];
 ReceiveImageViaSyphon [type="vuo.syphon.receive" version="1.0.2" label="Receive Image via Syphon|<refresh>refresh\l|<serverDescription>serverDescription\l|<receivedImage>receivedImage\r" pos="-1425,-555" _serverDescription="{\"serverName\":\"Main View\"}" _receivedImage_eventThrottling="drop"];
-RenderLayersToImage [type="vuo.layer.render.image" version="1.2.0" label="Render Layers to Image|<refresh>refresh\l|<layers>layers\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<multisampling>multisampling\l|<image>image\r|<renderedLayers>renderedLayers\r" pos="-1245,-450" _width="1680" _height="1050" _colorDepth="\"8bpc\"" _multisampling="\"8\""];
+RenderLayersToImage [type="vuo.layer.render.image" version="1.2.0" label="Render Layers to Image|<refresh>refresh\l|<layers>layers\l|<width>width\l|<height>height\l|<colorDepth>colorDepth\l|<multisampling>multisampling\l|<image>image\r|<renderedLayers>renderedLayers\r" pos="-1245,-450" _width="1024" _height="768" _colorDepth="\"8bpc\"" _multisampling="\"8\""];
 RenderLayersToWindow [type="vuo.layer.render.window" version="2.4.0" label="Render Layers to Window|<refresh>refresh\l|<layers>layers\l|<multisampling>multisampling\l|<setWindowProperties>setWindowProperties\l|<showedWindow>showedWindow\r|<requestedFrame>requestedFrame\r|<renderedLayers>renderedLayers\r" pos="-525,-480" fillcolor="blue" _multisampling="\"8\"" _showedWindow_eventThrottling="enqueue" _requestedFrame_eventThrottling="drop"];
+ScreenWidth [type="vuo.data.share.VuoInteger" version="1.0.0" label="Screen Width|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-1890,-375" _value="1680"];
+ScreenWidth2 [type="vuo.data.share.VuoInteger" version="1.0.0" label="Screen Width|<refresh>refresh\l|<value>value\l|<sameValue>sameValue\r" pos="-1890,-300" _value="1050"];
 SpinOffEvent [type="vuo.event.spinOffEvent" version="1.0.0" label="Spin Off Event|<refresh>refresh\l|<spunOff>spunOff\r" pos="-1890,-450" _spunOff_eventThrottling="enqueue"];
 
 ApplyMask:maskedImage -> MakeImageLayer:image;
+ChangeWindowSize:property -> MakeList2:1;
 FetchImage3:image -> MakeImageLayer2:image;
 MakeImageLayer2:layer -> MakeList10:2;
 MakeImageLayer:layer -> MakeList10:1;
@@ -52,6 +56,8 @@ MakeQuadFromFile:Quad -> RenderLayersToImage:refresh;
 ReceiveImageViaSyphon:receivedImage -> ApplyMask:image;
 RenderLayersToImage:image -> ApplyMask:mask;
 RenderLayersToWindow:requestedFrame -> MakeImageLayer2:refresh;
+ScreenWidth2:sameValue -> ChangeWindowSize:height [style=invis];
+ScreenWidth:sameValue -> ChangeWindowSize:width [style=invis];
 SpinOffEvent:spunOff -> FetchImage3:refresh;
 SpinOffEvent:spunOff -> MakeQuadFromFile10:Refresh;
 SpinOffEvent:spunOff -> MakeQuadFromFile12:Refresh;
@@ -63,4 +69,6 @@ SpinOffEvent:spunOff -> MakeQuadFromFile6:Refresh;
 SpinOffEvent:spunOff -> MakeQuadFromFile7:Refresh;
 SpinOffEvent:spunOff -> MakeQuadFromFile8:Refresh;
 SpinOffEvent:spunOff -> MakeQuadFromFile:Refresh;
+SpinOffEvent:spunOff -> ScreenWidth2:refresh [style=invis];
+SpinOffEvent:spunOff -> ScreenWidth:refresh [style=invis];
 }
