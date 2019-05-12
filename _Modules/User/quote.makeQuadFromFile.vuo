@@ -78,6 +78,7 @@ PublishedInputs:Folder -> MakeList:1;
 PublishedInputs:Refresh -> AppendTexts:refresh;
 SpinOffEvent:spunOff -> BottomLeft:refresh;
 SpinOffEvent:spunOff -> BottomRight:refresh;
+SpinOffEvent:spunOff -> MakeColorImage:refresh;
 SpinOffEvent:spunOff -> TopLeft:refresh;
 SpinOffEvent:spunOff -> TopRight:refresh;
 SplitText2:splitTexts -> GetItemFromList10:list;
